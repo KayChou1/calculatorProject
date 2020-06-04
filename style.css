@@ -2,3 +2,32 @@ body{
     color: magenta;
 }
 
+.calculator{
+    background-color: rgb(63, 63, 3);
+    border: 12px solid black;
+    width: 600px;
+    min-height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.buttons{
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    
+}
+
+
+.myDiv{
+    height: 200px;
+    width: 200px;
+    background-color: hotpink;
+    color: blue;
+    padding: 40px;
+    margin: auto;
+    border-radius: 10px;
+    
+}
