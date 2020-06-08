@@ -1,15 +1,17 @@
 body{
-    color: magenta;
+    color: white;
 }
 
 .calculator{
-    background-color: rgb(63, 63, 3);
+    background-color: red;
     border: 12px solid black;
-    width: 600px;
+    width: 300px;
     min-height: 400px;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
+
 }
 
 .buttons{
@@ -17,17 +19,71 @@ body{
     height: 40px;
     width: 40px;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.row0{
+    background-color: grey;
+    border: 5px solid black;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.row1{
+    background-color: pink;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}   
+
+.row2{
+    background-color: pink;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+
+.row3{
+    display: flex;
+    background-color: pink;
+    width: 100%;
+    justify-content: center;
     
 }
 
 
-.myDiv{
-    height: 200px;
-    width: 200px;
-    background-color: hotpink;
-    color: blue;
-    padding: 40px;
-    margin: auto;
-    border-radius: 10px;
+.row4{
+    display: flex;
+    background-color: pink;
+    width: 100%;
+    justify-content: center;
+
+}
+
+
+.row5{
+    display: flex;
+    background-color: pink;
+    width: 100%;
+    justify-content: center;
+     
+}
+
+.row6{
+    display: flex;
+    background-color: orangered;
+    width: 100%;
+    justify-content: center;
     
+     
 }
