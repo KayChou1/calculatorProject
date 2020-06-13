@@ -25,6 +25,12 @@ body{
     
 }
 
+
+.buttons:hover{
+    background-color: transparent;
+    color:black;
+}
+
 .row0{
     background-color: grey;
     border: 5px solid black;
@@ -59,6 +65,7 @@ body{
     width: 100%;
     justify-content: center;
     
+    
 }
 
 
@@ -81,7 +88,7 @@ body{
 
 .row6{
     display: flex;
-    background-color: orangered;
+    background-color: gray;
     width: 100%;
     justify-content: center;
     
