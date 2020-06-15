@@ -5,8 +5,13 @@ let currentText = '';
 
 function addAllListeners(param){
     for(let i =0; i < param.length; i++){
-        param[i].addEventListener('click',change)
-        console.log(param[i]);
+        if(param[i].innerHTML === '='){
+            param[i].addEventListener('click',equalclick)
+        } else{
+            param[i].addEventListener('click',change)
+        
+        } 
+            
     }
 }
 
@@ -24,13 +29,18 @@ function change(param){
 }
  
 
+// let sum = 0;
+//     for(i = 0; i < nums.length ; i++){
+//         sum = sum + parseInt(nums[i]); 
+//     }
+//     screen.innerHTML= sum;
+
+
 function add(strParam){
     let nums = strParam.split('+');
-    let sum = 0;
-    for(i = 0; i < nums.length ; i++){
-        sum = sum + parseInt(nums[i]); 
-    }
-    return sum;
+    
+    let add = parseInt(nums[0]) + parseInt(nums[1]);
+    screen.innerHTML = add;
 }
 
 
@@ -38,7 +48,7 @@ function subtract(strParam){
     let nums = strParam.split('-')
    
     let sub = parseInt(nums[0]) - parseInt(nums[1]);
-    return sub
+    screen.innerHTML = sub;
 
 }
 
@@ -48,7 +58,7 @@ function multiply(strParam){
     let nums = strParam.split('*')
 
     let answer = parseInt(nums[0]) * parseInt(nums[1]);
-    return answer
+    screen.innerHTML = answer;
     
 }
 
@@ -57,36 +67,31 @@ function divide(strParam){
     let nums = strParam.split('/')
     
     let quo = parseInt(nums[0]) / parseInt(nums[1]);
-    return quo
+    screen.innerHTML = quo;
 
 }
 
-function equal(strParam){
-    let num = strParam.split('=')
+
+
+
+
+function equalclick(){
+ console.log(currentText)
     
-    
-}
-
-
-
-
-function whichOpp(screentext){
-
-    
-    if(screentext.indexOf("*") > -1){
-         return multiply(screentext)
+    if(currentText.indexOf("*") > -1){
+        multiply(currentText)
         
-    }  else if(screentext.indexOf("/")> -1){
-        return divide(screentext)
+    }  else if(currentText.indexOf("/")> -1){
+        divide(currentText)
 
-    } else if(screentext.indexOf("+")> -1){
-        return add(screentext)
+    } else if(currentText.indexOf("+")> -1){
+        add(currentText)
 
-    }  else if(screentext.indexOf("-")> -1){
-        return subtract(screentext)
+    }  else if(currentText.indexOf("-")> -1){
+        subtract(currentText)
 
-    } else if(screentext.indexOf("=")> -1){
-        return equals(screentext)
+    } else if(currentText.indexOf("=")> -1){
+        equals(currentText)
     }
 
 }

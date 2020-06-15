@@ -1,9 +1,15 @@
 body{
-    color: white;
+    color:white;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5147d98fe4b0e61bb0ab60ec/1554840282215-1JQY3H6IPHTRYX201KSB/ke17ZwdGBToddI8pDm48kJRd4WeiaFwHmh6UajFNgq57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Uao9CdUvRK56zFWBAZf5rnxMh1_W5Z_PZbX9Jw0-wQQFKMpVOKskuS-bwtt9dYKlZQ/IMG_9525.JPG?format=1000w);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-color: black;
+
 }
 
 .calculator{
-    background-color: red;
+    background-color: pink; 
     border: 12px solid black;
     width: 300px;
     min-height: 400px;
@@ -40,10 +46,14 @@ body{
     height: 90px;
     justify-content: center;
     align-items: center;
+    overflow: visible;
+    text-overflow: clip;
+
+
 }
 
 .row1{
-    background-color: pink;
+    background-color: hotpink;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -51,7 +61,7 @@ body{
 }   
 
 .row2{
-    background-color: pink;
+    background-color:hotpink;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -61,7 +71,7 @@ body{
 
 .row3{
     display: flex;
-    background-color: pink;
+    background-color: hotpink;
     width: 100%;
     justify-content: center;
     
@@ -71,7 +81,7 @@ body{
 
 .row4{
     display: flex;
-    background-color: pink;
+    background-color: hotpink;
     width: 100%;
     justify-content: center;
 
@@ -80,7 +90,7 @@ body{
 
 .row5{
     display: flex;
-    background-color: pink;
+    background-color: hotpink;
     width: 100%;
     justify-content: center;
      
