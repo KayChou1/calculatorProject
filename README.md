@@ -1,4 +1,4 @@
-# calculatorProject
+# CalculatorProject
 # This is practice manipulating existing HTML text from JavaScript
 ## Todo:
 * [✔] create a screen.
